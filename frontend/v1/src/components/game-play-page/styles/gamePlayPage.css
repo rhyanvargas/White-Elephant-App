@@ -1,0 +1,4 @@
+.gift-table-wrapper {
+  display: flex;
+  flex-direction: column;
+}
