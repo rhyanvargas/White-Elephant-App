@@ -1,5 +1,27 @@
 /* GLOBAL APPLICATION STYLES */
 
+/* CSS VARIABLES */
+
+:root {
+  /* Layout */
+  --container-max-width: 1180px;
+  --container-width: 90%;
+
+  /* Colors */
+  --success: #42c27e;
+
+  --dark: rgb(9, 11, 23);
+
+  --white: #fafffe;
+
+  --light: #cdf989;
+  --grey: rgb(103, 110, 139);
+  --warning: firebrick;
+}
+
+html {
+}
+
 body {
   margin: 0;
   font-family: Circular, Arial, sans-serif;
@@ -27,7 +49,7 @@ h2 {
   margin: 0px;
   font-size: 22px;
   font-weight: 700;
-  color: rgb(103, 110, 139);
+  color: ;
   letter-spacing: 0.2px;
   line-height: 1.3;
 }
@@ -41,9 +63,10 @@ span {
 
 /* LAYOUT */
 .container {
-  max-width: 1180px;
+  max-width: var(--container-max-width);
   margin: 0px auto;
   padding-bottom: 200px;
+  width: var(--container-width);
 }
 /* UTILITIES */
 .flex-order-1 {
@@ -58,33 +81,19 @@ span {
 .align-center {
   text-align: center;
 }
-/* COLOR */
-/* 
-success:
-#42c27e;
 
-dark: 
-rgb(9, 11, 23);
-
-white: 
-#fafffe; 
-
-light:
-#cdf989
-
-*/
 .color-white {
-  color: #fafffe;
+  color: var(--white);
 }
 .bg-white {
-  background-color: #fafffe;
+  background-color: var(--white);
 }
 .color-light,
 .success {
-  color: #cdf989;
+  color: var(--success);
 }
 .bg-light {
-  background-color: #cdf989;
+  background-color: var(--success);
 }
 
 .label--small {
@@ -95,11 +104,11 @@ light:
 
 .label--big {
   font-weight: 600;
-  color: rgb(9, 11, 23);
+  color: var(--dark);
   font-size: 20px;
   text-transform: uppercase;
 }
 
 .warning {
-  color: firebrick;
+  color: var(--warning);
 }

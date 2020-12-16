@@ -1,7 +1,5 @@
 import React, { Fragment } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Header } from "./components/game-play-page/Header";
 import { GamePlayPage } from "./components/GamePlayPage";
 import { mockGiftData, mockPlayerData } from "./components/mockData";
 

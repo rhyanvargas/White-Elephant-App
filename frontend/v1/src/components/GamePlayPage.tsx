@@ -1,5 +1,4 @@
 import React from "react";
-import { readConfigFile } from "typescript";
 import { GiftGridTable } from "./game-play-page/GiftGridTable";
 import { Header } from "./game-play-page/Header";
 import { PlayerInfo } from "./game-play-page/PlayerInfo";

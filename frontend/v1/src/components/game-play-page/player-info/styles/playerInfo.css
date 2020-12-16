@@ -1,10 +1,24 @@
-.player-info-container {
+.info-container {
   position: fixed;
   bottom: 0;
   right: 0;
   display: flex;
   flex-direction: column;
   border-radius: 10px 0;
-  padding: 20px;
+
   background: white;
+}
+
+.info-header {
+  padding: 20px;
+  position: relative;
+  min-height: 75px;
+  color: white;
+  transition: height 160ms ease-out 0s;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(
+    135deg,
+    rgb(83, 64, 255) 0%,
+    rgb(22, 0, 217) 100%
+  );
 }

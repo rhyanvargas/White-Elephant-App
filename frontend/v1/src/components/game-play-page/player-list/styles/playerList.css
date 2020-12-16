@@ -4,7 +4,7 @@
   justify-content: space-evenly;
 }
 
-.player-wrapper .active {
+.player-wrapper.active {
   display: flex;
   flex-direction: row;
   background: #42c27e;
